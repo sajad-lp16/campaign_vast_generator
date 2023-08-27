@@ -1,0 +1,28 @@
+{% extends "shared/_Main_Vmap.xml" %}
+
+{% block creatives %}
+        <Creative>
+        {% if campaign.skip_able %}
+            <Linear skipoffset="{{ campaign.skip_after }}">
+        {% else %}
+            <Linear skipoffset="">
+        {% endif %}
+        <Duration>{{ campaign.show_length }}</Duration>
+        {% if campaign.tracking_url %}
+            {% include "android_components/campaign_trackers.xml" %}
+        {% endif %}
+        {% if campaign.video_url %}
+        <MediaFiles>
+            {% for video in campaign.video_url %}
+            {% include "shared/video_components.xml" with video=video %}
+            {% endfor %}
+        </MediaFiles>
+        {% endif %}
+        {% if campaign.banner_file %}
+            <Icons>
+            {% include "shared/banner_components.xml" with banner=campaign.banner_file%}
+            </Icons>
+        {% endif %}
+        </Linear>
+        </Creative>
+{% endblock %}

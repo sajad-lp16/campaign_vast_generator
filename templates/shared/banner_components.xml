@@ -1,0 +1,8 @@
+<Icon program="AdChoices" width="{{ banner.width }}" height="{{ banner.height }}" xPosition="left" yPosition="bottom">
+    <StaticResource creativeType="image/png">
+        <![CDATA[{{ banner.link }}]]></StaticResource>
+    <IconClicks>
+        <IconClickThrough>
+            <![CDATA[{{ campaign.campaign_url|safe }}]]></IconClickThrough>
+    </IconClicks>
+</Icon>

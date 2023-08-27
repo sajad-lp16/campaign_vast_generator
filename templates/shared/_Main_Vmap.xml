@@ -1,0 +1,25 @@
+{% extends "shared/_Main_Layout.xml" %}
+
+{% block main_vmap %}
+    <vmap:VASTAdData>
+        <VAST version="3.0">
+            <Ad id="{{ campaign.campaign_id }}">
+                <InLine>
+                    <AdTitle>
+                        {{ campaign.title }}
+                    </AdTitle>
+                    <Impression>
+                        <![CDATA[]]>
+                    </Impression>
+                    <Creatives>
+
+                        {% block creatives %}
+
+                        {% endblock %}
+
+                    </Creatives>
+                </InLine>
+            </Ad>
+        </VAST>
+    </vmap:VASTAdData>
+{% endblock %}

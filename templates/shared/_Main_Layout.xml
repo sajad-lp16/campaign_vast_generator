@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vmap:VMAP version="1.0" xmlns:vmap="http://www.iab.net/videosuite/vmap">
+    {% for campaign in campaigns %}
+        <vmap:AdBreak timeOffset="{{ campaign.start_point }}" breakType="linear" breakId="11031-Z857">
+            <vmap:AdSource id="{{ id }}" allowMultipleAds="false" followRedirects="true">
+                {% block main_vmap %}
+
+                {% endblock %}
+            </vmap:AdSource>
+        </vmap:AdBreak>
+    {% endfor %}
+</vmap:VMAP>

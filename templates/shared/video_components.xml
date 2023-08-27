@@ -1,0 +1,3 @@
+<MediaFile delivery="streaming" type="application/x-mpegURL" width="{{ video.width }}" height="{{ video.height }}">
+                    <![CDATA[{{ video.link|safe }}]]>
+            </MediaFile>

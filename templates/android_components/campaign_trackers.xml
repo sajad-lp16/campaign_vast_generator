@@ -1,0 +1,41 @@
+<TrackingEvents>
+            <Tracking event="progress" offset="00:00:06">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="start">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="pause">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="resume">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="firstQuartile">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="midpoint">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="thirdQuartile">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="complete">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="skip">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="mute">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="unmute">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="fullscreen">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+            <Tracking event="exitfullscreen">
+                <![CDATA[{{ tracking_url }}]]>
+            </Tracking>
+        </TrackingEvents>
